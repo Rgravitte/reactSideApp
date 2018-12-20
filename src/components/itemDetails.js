@@ -18,7 +18,7 @@ class itemDetail extends Component {
 
   componentWillMount() {
     const theID = this.props.match.params.id;
-    Axios.get('http://localhost:5000/api/items/details/' + theID)
+    Axios.get('https://pacific-bayou-60721.herokuapp.com/api/items/details/' + theID)
       .then((theThingIGetBackFromApi) => {
 
         console.log('------___---__-_-_--_-_-__-_-_-_-_-___-_-----', theThingIGetBackFromApi)
@@ -46,7 +46,7 @@ class itemDetail extends Component {
   editItem = (e) => {
     e.preventDefault();
     Axios.post(
-      "http://localhost:5000/api/items/edit/" +
+      "https://pacific-bayou-60721.herokuapp.com/api/items/edit/" +
         this.state.theActualItem._id,
       {
         theTitle: this.state.nameInput,
@@ -109,7 +109,7 @@ class itemDetail extends Component {
 
 
   deleteItem = () => {
-    Axios.post('http://localhost:5000/api/items/delete/' + this.state.theActualItem._id, {})
+    Axios.post('https://pacific-bayou-60721.herokuapp.com/api/items/delete/' + this.state.theActualItem._id, {})
       .then(() => {
 
         this.props.history.push('/itemList');

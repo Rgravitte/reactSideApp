@@ -18,7 +18,7 @@ updateForm=(e)=>{
 }
 
   fetchEmployee = () =>{
-    Axios.get("http://localhost:5000/api/employeeFind/" + this.state.theEmployee.employeeKey, { withCredentials: true })
+    Axios.get("https://pacific-bayou-60721.herokuapp.com/api/employeeFind/" + this.state.theEmployee.employeeKey, { withCredentials: true })
       .then((employee) => {
         this.setState({
           theEmployee: employee.data
@@ -32,7 +32,7 @@ updateForm=(e)=>{
 
 submitForm =(e) =>{
   e.preventDefault();
-  Axios.get("http://localhost:5000/api/employeeFind/"+this.state.employeeKey, {withCredentials:true})
+  Axios.get("https://pacific-bayou-60721.herokuapp.com/api/employeeFind/"+this.state.employeeKey, {withCredentials:true})
   .then((employee)=>{
     this.setState({
       theEmployee: employee.data
@@ -47,7 +47,7 @@ submitForm =(e) =>{
   deleteEmployee = () => {
     // console.log("hello")
     // console.log(this.state.theEmployee.employeeKey)
-    Axios.post("http://localhost:5000/api/employeeFind/delete/" + this.state.theEmployee.employeeKey, { withCredentials: true})
+    Axios.post("https://pacific-bayou-60721.herokuapp.com/api/employeeFind/delete/" + this.state.theEmployee.employeeKey, { withCredentials: true})
       .then(() => {
         this.props.history.push("/employeeList");
         // this is how your redirect in react
@@ -95,7 +95,7 @@ showEmployeeShifts=()=>{
 
 getTime=()=>{
 
-    Axios.post("http://localhost:5000/api/clockInAndOut/" + this.state.theEmployee._id, { withCredentials: true })
+    Axios.post("https://pacific-bayou-60721.herokuapp.com/api/clockInAndOut/" + this.state.theEmployee._id, { withCredentials: true })
   .then((theUpdatedEmployee)=>{
     console.log(String(new Date()),'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~',theUpdatedEmployee);
     this.setState({

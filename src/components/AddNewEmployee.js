@@ -31,7 +31,7 @@ class AddNewEmployee extends Component {
     const newposition = this.state.position;
     // const newQuantity = this.state.quantity
 
-    Axios.post("http://localhost:5000/api//employeeCreate", { employeeName: newName, employeeKey: newDescription, payRate: newCost, position: newposition },
+    Axios.post("https://pacific-bayou-60721.herokuapp.com/api/employeeCreate", { employeeName: newName, employeeKey: newDescription, payRate: newCost, position: newposition },
         // quantity: newQuantity
 
       { withCredentials: true })

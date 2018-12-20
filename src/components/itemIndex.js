@@ -17,7 +17,7 @@ class ItemIndex extends Component {
   }
 
   fetchItems = () => {
-    Axios.get("http://localhost:5000/api/items",
+    Axios.get("https://pacific-bayou-60721.herokuapp.com/api/items",
     {withCredentials: true})
       .then(responseFromApi => {
         // console.log("9090909090",responseFromApi);
@@ -106,7 +106,7 @@ class ItemIndex extends Component {
         // console.log(eachItem.quantity)
         // return eachItem.quantity
         Axios.post(
-          "http://localhost:5000/api/items/edit/" + eachItem._id,
+          "https://pacific-bayou-60721.herokuapp.com/api/items/edit/" + eachItem._id,
           {
             theTitle: eachItem.name,
             theDescription: eachItem.description,

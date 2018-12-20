@@ -5,7 +5,7 @@ class UserService {
 
   constructor() {
     let service = axios.create({
-      baseURL: 'http://localhost:5000/api',
+      baseURL: 'https://pacific-bayou-60721.herokuapp.com/api',
       withCredentials: true
     });
     this.service = service;

@@ -18,6 +18,7 @@ import { faStroopwafel } from "@fortawesome/free-solid-svg-icons";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import LandingPage from "./components/LandingPage"
 
+
 // add font awesome icons
 library.add(faStroopwafel);
 library.add(faPen);

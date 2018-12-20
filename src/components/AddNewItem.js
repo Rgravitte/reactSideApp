@@ -28,7 +28,7 @@ class AddNewItem extends Component {
     const newretailInput = this.state.retailInput;
     const newQuantity = this.state.quantity
  
-    Axios.post("http://localhost:5000/api/items/add-new",
+    Axios.post("https://pacific-bayou-60721.herokuapp.com/api/items/add-new",
       { theTitle: newName, 
         theDescription: newDescription , 
         itemCost: newCost, 
