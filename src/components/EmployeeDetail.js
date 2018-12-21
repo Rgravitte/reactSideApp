@@ -66,8 +66,7 @@ showEmployeeDetails=()=>{
           <td>
             <Button bsStyle="danger" onClick={this.deleteEmployee}>Delete This Employee</Button>
         </td>
-           </tr>
-           
+           </tr>   
       )
 }
 }
@@ -76,7 +75,7 @@ showEmployeeShifts=()=>{
   if(singleEmployee){
     const showShifts = singleEmployee.shifts.map((eachShift,i)=>{
       return(
-        <ul key={i}>
+        <ul key={i} className="listNone">
         <li className="blue">
           Clock In : {eachShift.clockIn}
         </li>
