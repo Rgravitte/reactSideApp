@@ -58,7 +58,7 @@ getEmployeeShifts=()=>{
         return (
           <div>
             <div>
-          <h1>Hello {this.singleEmployee}</h1>
+          {/* <h1>Hello {this.singleEmployee}</h1> */}
           </div>
           <ul key={i}>
 
