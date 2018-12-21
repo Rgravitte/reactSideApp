@@ -108,7 +108,7 @@ text-decoration: none;
           animation: fade-up-in 2500ms ease-in-out;
 }
 .imgSize{
-  margin-top: 57px;
+  /* margin-top: 57px; */
   margin-left: 1vw !important;
   height: 20vh;
   
@@ -131,8 +131,8 @@ text-decoration: none;
 /* =-=--=-=-=-=-=-=-=-=-=-=-=-=-=flipping img */
 .circle {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  /* top: 50%;
+  left: 50%; */
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   -webkit-animation: spin 2200ms ease-in-out;
@@ -298,10 +298,10 @@ text-decoration: none;
   color: #black;
 } */
 
-.App-logo {
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-}
+} */
 .app-logo-inNav{
   width: 5vw;
   height: 5vw;
@@ -347,7 +347,7 @@ text-decoration: none;
  .app-logo{
   width: 24vw;
   height: 22vh;
-  margin-right: -4vw;
+  /* margin-right: -4vw; */
   background-color: black;
   font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -493,11 +493,11 @@ text-decoration: none;
 .clickOnLogo{
   background-color: rgba(0,0,0,0);
   position: absolute;
-  height: 60vh;
+  /* height: 60vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20vw;
+  /* width: 20vw; */
 }
 .indicateClick {
   margin-top: 20px;
@@ -675,8 +675,8 @@ text-decoration: none;
 
   .logo {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  /* top: 50%;
+  left: 50%; */
   height: 270px;
   width: 270px;
   cursor: pointer;
@@ -894,11 +894,11 @@ text-decoration: none;
     text-align: center;
   }
   
-  .App-logo {
+  /* .App-logo {
     animation: App-logo-spin infinite 20s linear;
     height: 40vmin;
   }
-  
+   */
   
   .App-header {
     background-color: white;
@@ -925,13 +925,13 @@ text-decoration: none;
     text-align:center;
   }
   
-   .app-logo{
+   /* .app-logo{
     width: 36vw;
     height: 18vh;
     margin-right: -10vw;
     background-color: black;
     font-family: 'Open Sans Condensed', sans-serif;
-  }
+  } */
   
   @keyframes App-logo-spin {
     from {
@@ -1067,16 +1067,15 @@ text-decoration: none;
   .clickOnLogo{
     background-color: rgba(0,0,0,0);
     position: absolute;
-    height: 67vh;
+    /* height: 67vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 77vw;
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     padding: 2vw;
   }
   .indicateClick {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 60px;
     height: 60px;
     position: static;
